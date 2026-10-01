@@ -38,7 +38,7 @@ export const tripsList = [
     code: 'Trip 02',
     date: 'Today, 10:20 - 11:18',
     timestamp: '2026-09-06T10:20:00',
-    origin: 'Thane (Ghosbunder)',
+    origin: 'Thane (Ghodbunder)',
     destination: 'Navi Mumbai (Vashi Sector 17)',
     distanceKm: 31.2,
     durationMin: 58,
