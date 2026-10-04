@@ -23,6 +23,7 @@ import { NotificationsView } from './views/NotificationsView';
 import { RecommendationsView } from './views/RecommendationsView';
 import { PredictionHistoryView } from './views/PredictionHistoryView';
 import { ProfileSettingsView } from './views/ProfileSettingsView';
+import { RealTimeMonitoringView } from './views/RealTimeMonitoringView';
 
 export function App() {
   const { isAuthenticated, vehicleSetupComplete } = useAuth();
@@ -77,6 +78,8 @@ export function App() {
         return <RecommendationsView onNavigate={handleNavigate} />;
       case 'prediction-history':
         return <PredictionHistoryView />;
+      case 'realtime':
+        return <RealTimeMonitoringView />;
       case 'profile':
         return <ProfileSettingsView onNavigate={handleNavigate} />;
       default:
@@ -116,6 +119,7 @@ export function App() {
               { id: 'vehicle', label: 'Vehicle Health' },
               { id: 'battery', label: 'Battery Health' },
               { id: 'prediction', label: 'AI Fault Prediction' },
+              { id: 'realtime', label: '⚡ Real-Time Monitoring' },
               { id: 'analytics', label: 'Analytics' },
               { id: 'trips', label: 'Trip History' },
               { id: 'recommendations', label: 'Recommendations' },

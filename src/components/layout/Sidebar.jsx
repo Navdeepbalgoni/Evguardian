@@ -4,6 +4,7 @@ import {
   Car, 
   BatteryCharging, 
   BrainCircuit, 
+  Activity,
   LineChart, 
   Navigation, 
   Lightbulb, 
@@ -34,6 +35,13 @@ export const Sidebar = ({ currentTab, onNavigate, isCollapsed, setIsCollapsed })
       badgeColor: currentPredictionState.overallRisk?.probability >= 70 ? 'bg-rose-500 text-white animate-pulse' : 'bg-amber-500 text-slate-950 font-bold'
     },
     { id: 'analytics', label: 'Analytics', icon: LineChart },
+    { 
+      id: 'realtime', 
+      label: 'Real-Time Monitoring', 
+      icon: Activity,
+      badge: '⚡',
+      badgeColor: 'bg-violet-500 text-white font-bold'
+    },
     { id: 'trips', label: 'Trip History', icon: Navigation },
     { id: 'recommendations', label: 'Recommendations', icon: Lightbulb },
     { id: 'prediction-history', label: 'Prediction History', icon: History },

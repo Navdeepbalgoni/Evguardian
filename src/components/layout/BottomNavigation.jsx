@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Car, BatteryCharging, BrainCircuit, LineChart, Settings } from 'lucide-react';
+import { LayoutDashboard, Car, BatteryCharging, BrainCircuit, Activity, Settings } from 'lucide-react';
 import { useVehicle } from '../../context/VehicleContext';
 
 export const BottomNavigation = ({ currentTab, onNavigate }) => {
@@ -10,13 +10,8 @@ export const BottomNavigation = ({ currentTab, onNavigate }) => {
     { id: 'home', label: 'Home', icon: LayoutDashboard },
     { id: 'vehicle', label: 'Vehicle', icon: Car },
     { id: 'battery', label: 'Battery', icon: BatteryCharging },
-    { 
-      id: 'prediction', 
-      label: 'AI Fault', 
-      icon: BrainCircuit,
-      highlight: true
-    },
-    { id: 'analytics', label: 'Analytics', icon: LineChart },
+    { id: 'prediction', label: 'AI Fault', icon: BrainCircuit, highlight: true },
+    { id: 'realtime', label: 'Live ML', icon: Activity },
     { id: 'profile', label: 'Profile', icon: Settings },
   ];
 
