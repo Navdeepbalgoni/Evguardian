@@ -48,3 +48,11 @@ Thumbs.db
 
 # Vite Cache
 .vite/
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
